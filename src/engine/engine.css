@@ -182,6 +182,10 @@ svg .lbl{fill:var(--muted);font-size:12px}
 .stat{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:12px 14px;display:grid;gap:2px}
 .stat b{font-family:var(--f-display);font-size:1.6rem;font-weight:800;line-height:1.15}
 .stat i{font-style:normal;color:var(--muted);font-size:.92rem}
+.stat{align-content:start}
+.stat b{overflow-wrap:break-word;hyphens:manual}
+.stats.words{grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr))}
+.stats.words b{font-size:1.2rem;line-height:1.25;margin:2px 0}
 .grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
 .grid3>.key{margin:0}
 .meter{height:14px;border-radius:99px;background:var(--line);overflow:hidden}
